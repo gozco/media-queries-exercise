@@ -76,21 +76,20 @@ p {
     text-decoration: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
     .alert-info {
         display: none;
     }
 
     nav {
+        align-self: flex-end;
         float: right;
-        width: 50%;
+        width: 25%;
     }
 
     ul {
         display: flex;
         flex-direction: row;
-        float: right;
-        clear: right;
     }
 
     li {
@@ -98,24 +97,35 @@ p {
     }
 
     h1 {
+        display: flex;
+        align-self: flex-start;
         float: left;
         width: 50%;
     }
 
     body {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         position: relative;
         text-align: left;
     }
 
     .main {
         float: left;
-        width: calc(50% - 2.5em);
-        display: inline;
+        width: 65%;
     }
 
     .sub-section {
         float: right;
-        width: calc(50% - 2.5em);
-        display: inline;
+        width: 35%;
+    }
+
+    .header-img {
+        margin-bottom: 25px;
+    }
+
+    footer {
+        margin-top: 40%;
     }
 }
